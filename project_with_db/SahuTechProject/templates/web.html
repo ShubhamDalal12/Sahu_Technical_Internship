@@ -1,0 +1,696 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- TITLE -->
+		<title>SAHU TECHNOLOGIES</title>
+
+        <!-- META TAGS -->
+        <meta name="keywords" content="dental, care, clinic, clinics, dental care, dentist, doctors, health, healthcare, hospital, medical, pharmacy, treatment">
+
+		<!--  FAVICON  -->
+        <link rel="shortcut icon" href="{% static 'img/master/favicon.png' %}">
+
+        <!-- BOOTSTRAP FRAMEWORK STYLES -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+        <!-- MAIN CSS STYLE SHEET -->
+        <link rel="stylesheet" href="{% static 'css/navigation.css' %}">
+        <link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
+        
+        <link rel="stylesheet" href="{% static 'css/slick.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+      <style>
+      #carousel_image{
+    background-image: url( "{% static 'img/images/slider2.jpg' %}");
+}  
+      </style>
+
+	</head>
+
+<body>
+
+
+    <!--HEADER START-->
+    <header>
+        <!--TOP HEADER START-->
+        <div class="top-header">
+            <div class="container">
+                <div class="header-left">
+                    <p> <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                      </svg></i> &nbsp Phone :</strong> + 1 800 722 8987</p>
+                </div>
+                <div class="header-right">
+                   <div class="ht-right-email">
+                        <p><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                          </svg></i>  &nbsp info@denteur.com</p>
+                   </div>
+                   <div class="ht-right-social">
+                        <a href="https://www.facebook.com/"><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                          </svg></i></a>
+                   </div>
+                   <div class="ht-right-social">
+                        <a href="http://www.twitter.com/"><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                          </svg></i></a>
+                   </div>
+                   <div class="ht-right-social">
+                        <a href="https://www.linkedin.com/"><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                          </svg></i></a>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <!--TOP HEADER END-->
+
+        <!--NAVBAR START-->
+        <div class="main-nav" id="navbar">
+            <div class="container">
+                <nav id="navigation1" class="navigation">
+                    <div class="nav-header">
+                        <a class="nav-logo">
+                            <img src="{% static 'img/master/logo.png' %}"  class="white-logo">
+                        </a>
+                        <div class="nav-toggle"></div>
+                    </div>
+                    <div class="nav-menus-wrapper">
+                        <ul class="nav-menu align-to-right">
+                            <li><a>HOME</a>
+                                <ul class="nav-dropdown">
+                                </ul>
+                            </li>
+                            <li><a>PAGES</a>
+                                <ul class="nav-dropdown">
+                                </ul>
+                            </li>
+                            <li><a>SERVICES</a></li>
+                            <li><a>DEPARTMENTS</a>
+                                <ul class="nav-dropdown">
+                                </ul>
+                            </li>
+                            <li><a>BLOGS</a>
+                                <ul class="nav-dropdown">
+                                </ul>
+                            </li>
+                            <li><a>CONTACT</a>
+                                <ul class="nav-dropdown">
+                                  <li><a href="{% url 'ContactApp:contact-us' %}">Contact Us</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--NAVBAR END-->
+    </header>
+    <!--HEADER END-->
+
+    <!--SLIDER START-->
+    <div class="home-slider">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <!-- Slide One -->
+              <div class="carousel-item active" id='carousel_image'>
+                <div class="container">
+                    <div class="slider-caption">
+                        <h2 class="display-4 animated fadeInRight">We Care For <br> <span>Your Smile</span></h2>
+                        <p class="lead animated fadeInRight">Dentist is your primary care dental provider. This dentist diagnoses and treats.</p>
+                        <div class="btn-more"><a class="btn btn-slider" href="#" role="button">Learn More</a></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </div>
+    <!--SLIDER END-->
+
+    <div class="container">
+        <div class="front-layers">
+            <div class="row">
+                  <div class="col-lg-4 thumbnail-col">
+                      <div class="info-layer">
+                        <figure class="if-icon"><img src="{% static 'img/master/phone-contact.png' %}" alt=""></figure>
+                        <div class="if-caption">
+                            <h4>Get In Touch <br><span>+ 1 800 722 8987</span></h4>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 layer-col">
+                      <h3>Opening Hours</h3>
+                      <div class="span-schedule">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="#">Mon to Fri</a>
+                            <span class="badge badge-primary badge-pill">9:00 AM - 5:00 PM</span>
+                          </li>
+                          <li class="list-group-item"><a href="#">Saturday</a>
+                            <span class="badge badge-primary badge-pill">9:00 AM - 4:00 PM</span>
+                          </li>
+                          <li class="list-group-item"><a href="#">Sunday</a>
+                            <span class="badge badge-primary badge-pill">9:00 AM - 1:00 PM</span>
+                          </li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 layer-col form-col">
+                      <h3>Book a Visit</h3>
+                      <form method="POST" action="{% url 'ContactApp:form-home-details' %}">
+                        {% csrf_token %}
+                        <div class="messages"></div>
+                        <div class="controls">
+                            <div class="row" >
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input style="color: black;" id="form_name" type="text" name="name" class="form-control layer-contact" placeholder="Name" required="required" data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input style="color: black;" id="form_email" type="email" name="email" class="form-control layer-contact" placeholder="Email address" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input style="color: black;" id="form_phone" type="tel" name="phone" class="form-control layer-contact" placeholder="Phone number">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 submit-btn">
+                                    <input type="submit" class="btn btn-booking" value="Send Request">
+                                </div>
+                                {% if messages %}
+                                {% for message in messages %}
+				                          {{message}}
+                                {% endfor %}
+				                        {% endif %}
+                            </div>
+                        </div>
+                    </form>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT START -->
+    <section>
+
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="home-about">
+                    <h5>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x2-gap-fill" viewBox="0 0 16 16">
+                            <path d="M1 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V4zM1 9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V9zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V9z"/>
+                          </svg> ABOUT DENTEUR
+                    </h5>
+                    <h2>Welcome To Dental Care Denteur</h2>
+                    <p>A general dentist is your primary care dental provider. This dentist diagnoses, treats, and manages your overall oral health care needs, including gum care, root canals, fillings, crowns, veneers, bridges, and preventive education.</p>
+                    <h3>Nutrition Special Features</h3>
+                    <div class="ha-bullets">
+                        <div class="bullets-left">
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
+                              </svg> Anti-wrinkle treatment.</p>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
+                              </svg> Varicose vein treatment.</p>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
+                              </svg> Manual Handling Training.</p>
+                        </div>
+                       <div class="bullets-right">
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
+                              </svg> Anti-wrinkle treatment.</p>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
+                              </svg> Varicose vein treatment.</p>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16">
+                                <path d="M13.485 1.431a1.473 1.473 0 0 1 2.104 2.062l-7.84 9.801a1.473 1.473 0 0 1-2.12.04L.431 8.138a1.473 1.473 0 0 1 2.084-2.083l4.111 4.112 6.82-8.69a.486.486 0 0 1 .04-.045z"/>
+                              </svg> Manual Handling Training.</p>
+                        </div>
+                    </div>
+                    <figure class="signature-alt"><img src="{% static 'img/images/signature.png' %}" alt=""></figure>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="organic-pulsing-video home-about-img">
+                        <figure class="video-image"><img src="{% static 'img/master/img63.jpg' %}" alt=""></figure>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- WHY US START -->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-5 parallax-side"></div>
+            <div class="col-lg-7 content-side">
+              <div class="inner-content">
+                <div class="panel-title">
+                  <h5>WHY US</h5>
+                  <h2>Bringing Life to Your Smile</h2>
+                </div>
+                <p>Sharing your toothbrush is a great example of a bad habit that can negatively affect the health of your mouth, there are many habits that can have a positive impact, not only for your oral health. </p>
+                <hr class="divider">
+
+                <div class="span-services">
+                    <div class="row">
+                        <div class="col-lg-6">
+                          <div class="inner-service-box">
+                              <div class="sp-icon-box">
+                                  <figure class="sp-icon"><img src="{% static 'img/master/dentist.svg' %}" alt=""></figure>  
+                              </div>
+                              <div class="sp-caption">
+                                  <h4>Excellence Defined</h4>
+                                  <p>We are providing different services in this sector to wide.</p>
+                              </div> 
+                          </div>
+                        </div>
+                        <div class="col-lg-6 sp-space-break">
+                          <div class="inner-service-box">
+                              <div class="sp-icon-box">
+                                  <figure class="sp-icon"><img src="{% static 'img/master/tooth-saved.svg' %}" alt=""></figure>  
+                              </div>
+                              <div class="sp-caption">
+                                  <h4>Stunning smile</h4>
+                                  <p>We are providing different services in this sector to wide.</p>
+                              </div> 
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+        <!-- WHY US END -->
+
+        <!-- COUNTER START -->
+        <div class="container-fluid counter-section">
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="inner-counter">
+                        <figure class="counter-icon"><img src="{% static 'img/master/tooth.jpg' %}" alt=""></figure>
+                        <div class="counter-statistics">
+                            <div class="counter">12001</div>
+                            <p>SAVED TEETH</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3 c-movil-breakpoint">
+                    <div class="inner-counter">
+                        <figure class="counter-icon"><img src="{% static 'img/master/doctor.jpg' %}" alt=""></figure>
+                        <div class="counter-statistics">
+                            <div class="counter">8433</div>
+                            <p>SPECIALIST DOCTORS</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3 c-breakpoint">
+                    <div class="inner-counter">
+                        <figure class="counter-icon"><img src="{% static 'img/master/happy.jpg' %}" alt=""></figure>
+                        <div class="counter-statistics">
+                            <div class="counter">2911</div>
+                            <p>HAPPY CUSTOMERS</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-3 c-breakpoint">
+                    <div class="inner-counter">
+                        <figure class="counter-icon"><img src="{% static 'img/master/medical.jpg' %}" alt=""></figure>
+                        <div class="counter-statistics">
+                            <div class="counter">11233</div>
+                            <p>CLINICS</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- COUNTER END -->
+
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>We specialise in intelligent & effective Search and believes in the power of partnerships to grow business.</p>
+            </div>
+            <div class="services-carousel slider hover-effects image-hover">
+              <div class="slide">
+                <div class="service-box">
+                    <div class="cb-circle">
+                        <figure class="cb-icon">
+                            <img class="icon-default" src="{% static 'img/master/dentist1.jpg' %}" alt="">
+                            <img class="icon-hover" src="{% static 'img/master/dentist1.jpg' %}" alt="">
+                        </figure>
+                    </div>
+                    <div class="sb-caption">
+                        <h4>Orthodontic</h4>
+                        <p>Measures of poor oral health used in the study included painful.</p>
+                        <h5><a>Read More</a></h5>
+                    </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="service-box">
+                    <div class="cb-circle">
+                        <figure class="cb-icon">
+                            <img class="icon-default" src="{% static 'img/master/dental2.jpg' %}" alt="">
+                                <img class="icon-hover" src="{% static 'img/master/dental2.jpg' %}" alt="">
+                        </figure>
+                    </div>
+                    <div class="sb-caption">
+                        <h4>Endodontic</h4>
+                        <p>Measures of poor oral health used in the study included painful.</p>
+                        <h5><a>Read More</a></h5>
+                    </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="service-box">
+                    <div class="cb-circle">
+                        <figure class="cb-icon">
+                            <img class="icon-default" src="{% static 'img/master/toothbrush.jpg' %}" alt="">
+                            <img class="icon-hover" src="{% static 'img/master/toothbrush.jpg' %}" alt="">
+                        </figure>
+                    </div>
+                    <div class="sb-caption">
+                        <h4>Family Dentistry</h4>
+                        <p>Measures of poor oral health used in the study included painful.</p>
+                        <h5><a>Read More</a></h5>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- TESTIMONIALS START -->
+        <div class="container-fluid testimonials-parallax-alt">
+            <div class="container">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="about-testimonials">
+                        <h5>What our customer are saying</h5>
+                        <h2>Testimonials</h2>
+                        <p><strong>Going to use a passage of Lorem Ipsum, you need to be sure there readable content of a page.</strong></p>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
+
+                    </div>
+                  </div>
+                  <div class="col-lg-8">
+                      <div id="testimonial-carousel">
+                        <div class="testimonials-box groucho">
+                          <p>I just wanted to share a quick note and let you know that you guys do a really good job. I’m glad I decided to work with.</p>
+                            <div class="tb-client-details">
+                                <figure class="tb-client-avatar"><img src="{% static 'img/images/avatar1.jpg' %}" alt=""></figure>
+                                <div class="caption">
+                                    <h4><strong>Sara Jones</strong> - Designer</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials-box groucho">
+                          <p>I just wanted to share a quick note and let you know that you guys do a really good job. I’m glad I decided to work with.</p>
+                            <div class="tb-client-details">
+                                <figure class="tb-client-avatar"><img src="{% static 'img/images/avatar2.jpg' %}" alt=""></figure>
+                                <div class="caption">
+                                    <h4><strong>Martha Smith</strong> - Lawyer</h4>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- TESTIMONIALS END -->
+
+        <!-- SECTION ABOUT START -->
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="og-section-tittle">
+                  <h5>About Denteur</h5>
+                  <h2>Simply Better Dentistry</h2>
+                </div>
+                <div class="og-about-alt">
+                    <p><strong>All practicing at Denteur have earned either three or more years of undergraduate, The most common misuse for our teeth is tearing Sellotape.</strong></p>
+                    <p>A general dentist is your primary care dental provider. This dentist diagnoses, treats, and manages your overall oral health care needs, including gum care, root canals, fillings, crowns, veneers, bridges, and preventive education.</p>
+                    <div class="og-accordion">
+                        <ul class="accordion">
+                            <li>
+                                <a>How can i contact you?</a>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its grid-item. The point of using Lorem Ipsum.</p>
+                            </li> 
+                        </ul> <!-- / accordion -->
+                    </div>
+                </div>
+              </div>
+              <div class="col-lg-5 space-break">
+                <figure class="worker-portrait">
+                    <img src="{% static 'img/images/img38.jpg' %}" alt="">
+                </figure>
+              </div>
+            </div>
+        </div>
+        <!-- SECTION ABOUT END -->
+
+        <div class="container-fluid parallax-section">
+            <div class="container">
+                <div class="parallax-label">
+                    <h2>Care For Your Smile</h2>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                    <a class="btn btn-custom" role="button">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- LATEST NEWS START -->
+        <div class="container">
+          <div class="section-title">
+              <h2>Latest News</h2>
+              <p>We specialise in intelligent & effective Search and believes in the power of partnerships to grow business.</p>
+          </div>
+          <div class="news-carousel slider hover-effects image-hover">
+            <div class="slide">
+              <div class="thumbnail-box">
+                  <figure class="tb-image"><img src="{% static 'img/images/img37.jpg' %}" alt=""></figure>  
+                  <div class="tb-caption">
+                      <div class="inner-caption">
+                          <div class="ic-top">
+                              <div class="post-date">
+                                  <p>25<br><span>May</span></p>
+                              </div>
+                              <h3>Causes and Treatment of Gengivitis</h3>
+                          </div>
+                          <p>The ground-breaking research took 11 years to complete and is the longest study.</p>
+                      </div>
+                  </div>
+                  
+              </div> 
+            </div>
+            <div class="slide">
+              <div class="thumbnail-box">
+                  <figure class="tb-image"><img src="{% static 'img/images/img34.jpg' %}" alt=""></figure>  
+                  <div class="tb-caption">
+                      <div class="inner-caption">
+                          <div class="ic-top">
+                              <div class="post-date">
+                                  <p>23<br><span>May</span></p>
+                              </div>
+                              <h3>Oral Health Foundation Green Paper</h3>
+                          </div>
+                          <p>Scientists found that people who use an electric toothbrush have healthier gums.</p>
+                      </div>
+                  </div>
+                  
+              </div> 
+            </div>
+            <div class="slide">
+              <div class="thumbnail-box">
+                  <figure class="tb-image"><img src="{% static 'img/images/img35.jpg' %}" alt=""></figure>  
+                  <div class="tb-caption">
+                      <div class="inner-caption">
+                          <div class="ic-top">
+                              <div class="post-date">
+                                  <p>12<br><span>May</span></p>
+                              </div>
+                              <h3>Share a Smile Winners Announced</h3>
+                          </div>
+                          <p>Having undertaken a comprehensive review of existing guidance for best use of denture.</p>
+                      </div>
+                  </div>
+                  
+              </div> 
+            </div>
+          </div>
+      </div>
+             
+        <!-- LATEST NEWS END -->
+
+    </section>
+    <!-- CONTENT START -->
+
+    <!-- FOOTER START -->
+    <footer>
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="footer-col">
+                  <figure class="footer-logo"><img src="{% static 'img/master/logo-footer.png' %}" alt=""></figure>
+                  <p>Denteur care about dental promote dental health through organized.</p>
+                  <div class="footer-icon">
+                    <div class="span-fi">
+                        <div class="fi-fas"><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                          </svg></i></div>
+                        <div class="fi-caption">
+                            <p>PO BOX 33195 NW 56th ST Miami, Florida</p>
+                        </div>
+                    </div>
+                    <div class="span-fi">
+                        <div class="fi-fas"><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                          </svg></i></div>
+                        <div class="fi-caption">
+                            <p>Call US: + 1 800 722 8987</p>
+                        </div>
+                    </div>
+                    <div class="span-fi">
+                        <div class="fi-fas"><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                          </svg></i></div>
+                        <div class="fi-caption">
+                            <p>info@denteur.com</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="footer-col">
+                  <h4>RECENT POSTS</h4>
+                  <div class="media-post">
+                      <figure class="media-thumb"><a><img src="{% static 'img/images/blog-thumb.jpg' %}" alt=""></a></figure>
+                      <div class="media-caption">
+                        <h5>What Causes Periocoronitis</h5>
+                        <p>24 July 2019</p>
+                      </div>
+                  </div>
+                  <hr class="divider">
+                  <div class="media-post">
+                      <figure class="media-thumb"><a><img src="{% static 'img/images/blog-thumb2.jpg' %}" alt=""></a></figure>
+                      <div class="media-caption">
+                        <h5>Gingivitis Causes and Treatment</h5>
+                        <p>22 July 2019</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="footer-col">
+                  <h4>TAGS</h4>
+                  <div class="popular-links">
+                    <ul>
+                        <li><a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+                          </svg> About Us</a></li>
+                        <li><a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+                          </svg> Blogs & News</a></li>
+                        <li><a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            </svg> Contact US</a></li>
+                        <li><a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+                          </svg> Our Services</a></li>
+                        <li><a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+                            <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+                          </svg> Gallery</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="footer-col last-col">
+                  <h4>INSTAGRAM PHOTOS</h4>
+                  <div class="footer-grid-box">
+                    <div class="row">
+                      <div class="col-4 col-sm-2 col-md-2 col-lg-4 gb-photos">
+                        <a><img src="{% static 'img/images/img15.jpg' %}" alt=""></a>
+                      </div>
+                      <div class="col-4 col-sm-2 col-md-2 col-lg-4 gb-photos">
+                        <a><img src="{% static 'img/images/img27.jpg' %}" alt=""></a>
+                      </div>
+                      <div class="col-4 col-sm-2 col-md-2 col-lg-4 gb-photos">
+                        <a><img src="{% static 'img/images/img28.jpg' %}" alt=""></a>
+                      </div>
+                      <div class="col-4 col-sm-2 col-md-2 col-lg-4 gb-photos">
+                        <a><img src="{% static 'img/images/img29.jpg' %}" alt=""></a>
+                      </div>
+                      <div class="col-4 col-sm-2 col-md-2 col-lg-4 gb-photos">
+                        <a><img src="{% static 'img/images/img30.jpg' %}" alt=""></a>
+                      </div>
+                      <div class="col-4 col-sm-2 col-md-2 col-lg-4 gb-photos">
+                        <a><img src="{% static 'img/images/img31.jpg' %}" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="divider">
+            <div class="footer-bottom">
+                <div class="fb-copyright">
+                    <p>© 2019 Denteur - Responsive Dental & Medical HTML Template</p>
+                </div>
+                <div class="fb-social">
+                    <div class="span-fb-social"><a><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                      </svg></i></a></div>
+                    <div class="span-fb-social"><a><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                      </svg></i></a></div>
+                    <div class="span-fb-social"><a><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                      </svg></i></a></div>
+                    <div class="span-fb-social last-box"><a><i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                      </svg></i></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+    <!-- JAVASCRIPTS -->
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/navigation.js' %}"></script>
+    <!-- JAVASCRIPTS END -->
+
+    </body>
+
+</html>
